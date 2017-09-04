@@ -8,5 +8,5 @@ export const PopularRouterModule = RouterModule.forChild([
       { path: '', component: PopularComponent }
     ]
   }
-])
+]);
 
