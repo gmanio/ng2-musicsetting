@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scale='no', shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    /* SK TechX - Base 1.0 */
+    html, body, form, div, p, dl, dt, dd, ul, ol, li, fieldset, th, td, button, blockquote { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; }
+    h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+    body { -webkit-text-size-adjust: none; }
+    input, textarea, select, button { font: inherit; vertical-align: middle; padding: 0; }
+    input[type='button'], input[type='text'], input[type='image'], input[type='submit'], input[type='password'], textarea { -webkit-appearance: none; border-radius: 0; }
+    input[type='checkbox'] { -webkit-appearance: checkbox; }
+    input[type='radio'] { -webkit-appearance: radio; }
+    textarea { resize: none; }
+    table { border-collapse: collapse; border-spacing: 0; }
+    ol, ul { list-style: none; }
+    img, fieldset, iframe { border: none; }
+    address, cite, code, dfn, em, var, th, i { font-style: normal; font-weight: normal; }
+    a { text-decoration: none; }
+    article, aside, dialog, figure, footer, header, hgroup, nav, section { display: block; }
+    a, button { cursor: pointer; background: transparent; }
+    hr { display: none; }
+    div { padding: 10px; }
+    input { width: 100%; border: 1px solid red; font-size: 25px; line-height: 40px; }
+  </style>
+</head>
+<body>
+<div>
+  <span>[Web발신]  구성원 여러분 안녕하세요.  SK테크엑스 구성원 대상으로 뮤직메이트 무제한 듣기 혜택을 제공해 드립니다.   [앱 다운로드]  안드로이드: https://goo.gl/RhA6bK  애플: https://goo.gl/PEoMyP   [등록 방법]  ① 뮤직메이트 메인 좌측 상단 '≡' 버튼 클릭  ② 상단 '이용권 구매' 선택  ③ 최하단 쿠폰 등록창에 쿠폰코드 16자리 입력  (아이폰은 이용권 구매창 상단 '이용권 상시 할인' 배너 클릭 후 쿠폰코드 입력)   [쿠폰코드]  1185309894215701   [유의사항]  - 쿠폰코드는 구성원 1명 당 1회만 발급됩니다.  - 쿠폰 등록일 기준으로 30일 단위 자동갱신 됩니다.  - 본 쿠폰은 구성원 전용 혜택으로, 본인만 등록 가능하며 양도 및 계정 이관이 불가합니다.      </span>
+  <p>원문 : </p>
+  <input type="text">
+  <br>
+  <br>
+  <span>쿠폰번호 추출 (숫자 16자리) : </span>
+  <input type="text" oninput="onPaste(this, this.value)">
+</div>
+<script>
+  function onPaste(el, text) {
+    var re = new RegExp('\\d{16}', 'g');
+    var regex = '\([a-zA-Z0-9])\g';
+
+    var couponValue = regex.exec(text);
+    el.value = couponValue.toString();
+
+    return false;
+  }
+</script>
+</body>
+</html>
