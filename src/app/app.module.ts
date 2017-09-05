@@ -3,9 +3,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-// Modules
-import { HomeModule } from './containers/home/home.module';
-
 // IndexComponent
 import { AppComponent } from './app.component';
 
@@ -21,7 +18,6 @@ import { RootRouterModule } from './app.routes';
     BrowserModule,
     HttpClientModule,
     RootRouterModule,       // router configure
-    HomeModule,             // initial loading module
   ],
   bootstrap: [AppComponent]
 })
