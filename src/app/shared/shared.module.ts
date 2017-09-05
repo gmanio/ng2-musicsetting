@@ -22,6 +22,7 @@ import { NativeBridgeService } from './services/interfaces/native-bridge.service
     ApiService,
     BroadcastEventService,
     NativeBridgeService,
+    ApiService,
     AlbumStores
   ]
 })
