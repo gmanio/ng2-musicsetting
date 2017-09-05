@@ -6,16 +6,19 @@ import { LoggerService } from './services/commons/logger.service';
 import { ApiService } from './services/interfaces/api.service';
 import { BroadcastEventService } from './services/interfaces/broadcast-event.service';
 import { NativeBridgeService } from './services/interfaces/native-bridge.service';
+import { ToastComponent } from '../components/toast/toast.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    TestComponent
+    TestComponent,
+    ToastComponent
   ],
   exports: [
-    TestComponent
+    TestComponent,
+    ToastComponent
   ],
   providers: [
     ApiService,
