@@ -1,4 +1,7 @@
 # Musicmall-Web
+[View : Build UI Link](http://172.21.85.156)
+
+[Documentation : Frontend Structure Link](http://172.21.85.156/docs)
 
 <img src="https://angular.io/assets/images/logos/angular/shield-large.svg" width="100" height="100" />
 <img src="https://avatars0.githubusercontent.com/u/16272733?v=4&s=200" width="100" height="100" />
@@ -24,25 +27,7 @@
 
 ### Etc
 [ Build 관련 미지원 ES6 feature 리스트 링크 ](https://github.com/rangle/angular-2-aot-sandbox#func-declaration-export-top)
+[ The 4 H’s of Writing Error Messages : 에러메시지 작성의 원칙](http://uxmas.com/2012/the-4-hs-of-writing-error-messages)
 
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+### Article
+[Rangle.io : @ngrx](https://angular-2-training-book.rangle.io/handout/state-management/ngrx)

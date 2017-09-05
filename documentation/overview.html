@@ -26,18 +26,15 @@
                 <ul class="list">
             
                     <li class="title">
-                        <a href="./">musicmall documentation</a>
+                        <a href="./index.html">musicmall documentation</a>
                     </li>
             
                     <li class="divider"></li>
             
             
                     <li class="chapter">
-                        <a data-type="chapter-link" href="./"><span class="fa fa-home"></span>Getting started</a>
+                        <a data-type="chapter-link" href="./index.html"><span class="fa fa-home"></span>Getting started</a>
                         <ul class="links">
-                                <li class="link">
-                                    <a href="./" ><span class="fa fa-file-text-o"></span>README</a>
-                                </li>
                                 <li class="link">
                                     <a 
                                          href="./overview.html" 
@@ -47,46 +44,114 @@
                                         <span class="fa fa-th"></span>Overview
                                     </a>
                                 </li>
+                                <li class="link">
+                                  <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
                         </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="./modules.html" >
-                            <span class="fa fa-archive"></span>
-                            <span>Modules</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                            <div class="menu-toggler linked" data-toggle="collapse"
                                     data-target="#xs-modules-links"
-                            ></span>
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
                         </a>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-modules-links"
                             >
                                 <li class="link">
-                                    <a href="modules/AppModule.html" >AppModule</a>
+                                    <a href="./modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./modules/HomeModule.html" >HomeModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./modules/PopularModule.html" >PopularModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./modules/SharedModule.html" >SharedModule</a>
                                 </li>
                         </ul>
                     </li>
             
                     <li class="chapter">
-                        <div class="simple">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
                             <span class="fa fa-cogs"></span>
                             <span>Components</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-components-links"
-                                ></span>
+                            <span class="fa fa-angle-down"></span>
                         </div>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-components-links"
                             >
                                 <li class="link">
-                                    <a href="components/AppComponent.html" >AppComponent</a>
+                                    <a href="./components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/HomeComponent.html" >HomeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/PageNotFoundComponent.html" >PageNotFoundComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/PopularComponent.html" >PopularComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/TestComponent.html" >TestComponent</a>
                                 </li>
                         </ul>
                     </li>
             
             
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="./classes/Album.html" >Album</a>
+                                </li>
+                        </ul>
+                    </li>
             
             
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="./interfaces/IAlbum.html" >IAlbum</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IAlbumImage.html" >IAlbumImage</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IArtist.html" >IArtist</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/ITrack.html" >ITrack</a>
+                                </li>
+                        </ul>
+                    </li>
             
             
             
@@ -97,7 +162,7 @@
             
                     <li class="divider"></li>
                     <li class="copyright">
-                            Documentation generated using <a href="https://compodoc.github.io/compodoc/" target="_blank">
+                            Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
                                         <img src=".//images/compodoc-vectorise.svg" class="img-responsive">
                             </a>
                     </li>
@@ -115,7 +180,7 @@
                        <ul class="list">
                    
                            <li class="title">
-                               <a href="./">musicmall documentation</a>
+                               <a href="./index.html">musicmall documentation</a>
                            </li>
                    
                            <li class="divider"></li>
@@ -125,11 +190,8 @@
                                </div>
                    
                            <li class="chapter">
-                               <a data-type="chapter-link" href="./"><span class="fa fa-home"></span>Getting started</a>
+                               <a data-type="chapter-link" href="./index.html"><span class="fa fa-home"></span>Getting started</a>
                                <ul class="links">
-                                       <li class="link">
-                                           <a href="./" ><span class="fa fa-file-text-o"></span>README</a>
-                                       </li>
                                        <li class="link">
                                            <a 
                                                 href="./overview.html" 
@@ -139,46 +201,114 @@
                                                <span class="fa fa-th"></span>Overview
                                            </a>
                                        </li>
+                                       <li class="link">
+                                         <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
                                </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="./modules.html" >
-                                   <span class="fa fa-archive"></span>
-                                   <span>Modules</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                   <div class="menu-toggler linked" data-toggle="collapse"
                                            data-target="#modules-links"
-                                   ></span>
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
                                </a>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="modules-links"
                    >
                                        <li class="link">
-                                           <a href="modules/AppModule.html" >AppModule</a>
+                                           <a href="./modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./modules/HomeModule.html" >HomeModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./modules/PopularModule.html" >PopularModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./modules/SharedModule.html" >SharedModule</a>
                                        </li>
                                </ul>
                            </li>
                    
                            <li class="chapter">
-                               <div class="simple">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
                                    <span class="fa fa-cogs"></span>
                                    <span>Components</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#components-links"
-                   ></span>
+                                   <span class="fa fa-angle-down"></span>
                                </div>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="components-links"
                    >
                                        <li class="link">
-                                           <a href="components/AppComponent.html" >AppComponent</a>
+                                           <a href="./components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/HomeComponent.html" >HomeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/PageNotFoundComponent.html" >PageNotFoundComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/PopularComponent.html" >PopularComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/TestComponent.html" >TestComponent</a>
                                        </li>
                                </ul>
                            </li>
                    
                    
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="./classes/Album.html" >Album</a>
+                                       </li>
+                               </ul>
+                           </li>
                    
                    
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="./interfaces/IAlbum.html" >IAlbum</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IAlbumImage.html" >IAlbumImage</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IArtist.html" >IArtist</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/ITrack.html" >ITrack</a>
+                                       </li>
+                               </ul>
+                           </li>
                    
                    
                    
@@ -189,7 +319,7 @@
                    
                            <li class="divider"></li>
                            <li class="copyright">
-                                   Documentation generated using <a href="https://compodoc.github.io/compodoc/" target="_blank">
+                                   Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
                                                <img src=".//images/compodoc-vectorise.svg" class="img-responsive">
                                    </a>
                            </li>
@@ -200,11 +330,229 @@
                </div>
                <div class="content overview">
                    <div class="content-data">
+
+
 <h3>Overview</h3>
 <div class="text-center">
-    <object id="demo-svg" type="image/svg+xml" data="graph/dependencies.svg" style="width: 100%; height: 250px;">
-            Your browser does not support SVG
-    </object>
+    <div id="module-graph-svg">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: dependencies Pages: 1 -->
+<svg width="1190pt" height="290pt"
+ viewBox="0.00 0.00 1190.00 290.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 286)">
+<title>dependencies</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-286 1186,-286 1186,4 -4,4"/>
+<text text-anchor="start" x="570.0091" y="-42.4" font-family="sans-serif" font-weight="bold" font-size="14.00" fill="#000000">Legend</text>
+<polygon fill="#ffffb3" stroke="transparent" points="357,-10 357,-30 377,-30 377,-10 357,-10"/>
+<text text-anchor="start" x="380.629" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Declarations</text>
+<polygon fill="#8dd3c7" stroke="transparent" points="470,-10 470,-30 490,-30 490,-10 470,-10"/>
+<text text-anchor="start" x="493.7251" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Module</text>
+<polygon fill="#80b1d3" stroke="transparent" points="556,-10 556,-30 576,-30 576,-10 556,-10"/>
+<text text-anchor="start" x="579.7812" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Bootstrap</text>
+<polygon fill="#fdb462" stroke="transparent" points="653,-10 653,-30 673,-30 673,-10 653,-10"/>
+<text text-anchor="start" x="676.6732" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Providers</text>
+<polygon fill="#fb8072" stroke="transparent" points="749,-10 749,-30 769,-30 769,-10 749,-10"/>
+<text text-anchor="start" x="772.7258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
+<g id="clust1" class="cluster">
+<title>cluster_AppModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="8,-70 8,-274 542,-274 542,-70 8,-70"/>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_AppModule_imports</title>
+<polygon fill="none" stroke="#000000" points="16,-78 16,-130 534,-130 534,-78 16,-78"/>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_AppModule_bootstrap</title>
+<polygon fill="none" stroke="#000000" points="229,-214 229,-266 353,-266 353,-214 229,-214"/>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_HomeModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="550,-70 550,-266 844,-266 844,-70 550,-70"/>
+</g>
+<g id="clust9" class="cluster">
+<title>cluster_HomeModule_imports</title>
+<polygon fill="none" stroke="#000000" points="558,-78 558,-198 836,-198 836,-78 558,-78"/>
+</g>
+<g id="clust13" class="cluster">
+<title>cluster_PopularModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="1000,-138 1000,-266 1174,-266 1174,-138 1000,-138"/>
+</g>
+<g id="clust15" class="cluster">
+<title>cluster_PopularModule_imports</title>
+<polygon fill="none" stroke="#000000" points="1008,-146 1008,-198 1166,-198 1166,-146 1008,-146"/>
+</g>
+<g id="clust19" class="cluster">
+<title>cluster_SharedModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="852,-206 852,-274 992,-274 992,-206 852,-206"/>
+</g>
+<g id="clust22" class="cluster">
+<title>cluster_SharedModule_exports</title>
+<polygon fill="none" stroke="#000000" points="860,-214 860,-266 984,-266 984,-214 860,-214"/>
+</g>
+<!-- RouterModule -->
+<g id="node1" class="node">
+<title>RouterModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="525.6528,-122 522.6528,-126 501.6528,-126 498.6528,-122 428.3472,-122 428.3472,-86 525.6528,-86 525.6528,-122"/>
+<text text-anchor="middle" x="477" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">RouterModule</text>
+</g>
+<!-- AppModule -->
+<g id="node5" class="node">
+<title>AppModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="332.6571,-190 329.6571,-194 308.6571,-194 305.6571,-190 249.3429,-190 249.3429,-154 332.6571,-154 332.6571,-190"/>
+<text text-anchor="middle" x="291" y="-167.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppModule</text>
+</g>
+<!-- RouterModule&#45;&gt;AppModule -->
+<g id="edge1" class="edge">
+<title>RouterModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M477,-122.2228C477,-142.3652 477,-172 477,-172 477,-172 342.742,-172 342.742,-172"/>
+<polygon fill="#000000" stroke="#000000" points="342.7421,-168.5001 332.742,-172 342.742,-175.5001 342.7421,-168.5001"/>
+</g>
+<!-- BrowserModule -->
+<g id="node2" class="node">
+<title>BrowserModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="410.4734,-122 407.4734,-126 386.4734,-126 383.4734,-122 303.5266,-122 303.5266,-86 410.4734,-86 410.4734,-122"/>
+<text text-anchor="middle" x="357" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">BrowserModule</text>
+</g>
+<!-- BrowserModule&#45;&gt;AppModule -->
+<g id="edge2" class="edge">
+<title>BrowserModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M318.1708,-122.2228C318.1708,-122.2228 318.1708,-143.7269 318.1708,-143.7269"/>
+<polygon fill="#000000" stroke="#000000" points="314.6708,-143.7269 318.1708,-153.7269 321.6708,-143.727 314.6708,-143.7269"/>
+</g>
+<!-- HttpClientModule -->
+<g id="node3" class="node">
+<title>HttpClientModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="285.1611,-122 282.1611,-126 261.1611,-126 258.1611,-122 166.8389,-122 166.8389,-86 285.1611,-86 285.1611,-122"/>
+<text text-anchor="middle" x="226" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">HttpClientModule</text>
+</g>
+<!-- HttpClientModule&#45;&gt;AppModule -->
+<g id="edge3" class="edge">
+<title>HttpClientModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M267.2511,-122.2228C267.2511,-122.2228 267.2511,-143.7269 267.2511,-143.7269"/>
+<polygon fill="#000000" stroke="#000000" points="263.7511,-143.7269 267.2511,-153.7269 270.7511,-143.727 263.7511,-143.7269"/>
+</g>
+<!-- RootRouterModule -->
+<g id="node4" class="node">
+<title>RootRouterModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="148.3795,-122 145.3795,-126 124.3795,-126 121.3795,-122 23.6205,-122 23.6205,-86 148.3795,-86 148.3795,-122"/>
+<text text-anchor="middle" x="86" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">RootRouterModule</text>
+</g>
+<!-- RootRouterModule&#45;&gt;AppModule -->
+<g id="edge4" class="edge">
+<title>RootRouterModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M86,-122.2228C86,-142.3652 86,-172 86,-172 86,-172 239.0205,-172 239.0205,-172"/>
+<polygon fill="#000000" stroke="#000000" points="239.0205,-175.5001 249.0205,-172 239.0205,-168.5001 239.0205,-175.5001"/>
+</g>
+<!-- AppComponent  -->
+<g id="node6" class="node">
+<title>AppComponent </title>
+<polygon fill="#80b1d3" stroke="#000000" points="345.439,-258 236.561,-258 236.561,-222 345.439,-222 345.439,-258"/>
+<text text-anchor="middle" x="291" y="-235.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppComponent </text>
+</g>
+<!-- AppModule&#45;&gt;AppComponent  -->
+<g id="edge5" class="edge">
+<title>AppModule&#45;&gt;AppComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="1,5" d="M291,-190.2228C291,-190.2228 291,-211.7269 291,-211.7269"/>
+<polygon fill="#000000" stroke="#000000" points="287.5001,-211.7269 291,-221.7269 294.5001,-211.727 287.5001,-211.7269"/>
+</g>
+<!-- CommonModule -->
+<g id="node7" class="node">
+<title>CommonModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="827.6681,-122 824.6681,-126 803.6681,-126 800.6681,-122 716.3319,-122 716.3319,-86 827.6681,-86 827.6681,-122"/>
+<text text-anchor="middle" x="772" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CommonModule</text>
+</g>
+<!-- SharedModule -->
+<g id="node8" class="node">
+<title>SharedModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="828.4231,-190 825.4231,-194 804.4231,-194 801.4231,-190 729.5769,-190 729.5769,-154 828.4231,-154 828.4231,-190"/>
+<text text-anchor="middle" x="779" y="-167.8" font-family="Times,serif" font-size="14.00" fill="#000000">SharedModule</text>
+</g>
+<!-- CommonModule&#45;&gt;SharedModule -->
+<g id="edge12" class="edge">
+<title>CommonModule&#45;&gt;SharedModule</title>
+<path fill="none" stroke="#000000" d="M778.8113,-122.2228C778.8113,-122.2228 778.8113,-143.7269 778.8113,-143.7269"/>
+<polygon fill="#000000" stroke="#000000" points="775.3114,-143.7269 778.8113,-153.7269 782.3114,-143.727 775.3114,-143.7269"/>
+</g>
+<!-- HomeModule -->
+<g id="node10" class="node">
+<title>HomeModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="757.7619,-258 754.7619,-262 733.7619,-262 730.7619,-258 664.2381,-258 664.2381,-222 757.7619,-222 757.7619,-258"/>
+<text text-anchor="middle" x="711" y="-235.8" font-family="Times,serif" font-size="14.00" fill="#000000">HomeModule</text>
+</g>
+<!-- CommonModule&#45;&gt;HomeModule -->
+<g id="edge6" class="edge">
+<title>CommonModule&#45;&gt;HomeModule</title>
+<path fill="none" stroke="#000000" d="M722.9775,-122.0597C722.9775,-122.0597 722.9775,-211.8656 722.9775,-211.8656"/>
+<polygon fill="#000000" stroke="#000000" points="719.4776,-211.8655 722.9775,-221.8656 726.4776,-211.8656 719.4776,-211.8655"/>
+</g>
+<!-- PopularModule -->
+<g id="node12" class="node">
+<title>PopularModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="1111.5982,-258 1108.5982,-262 1087.5982,-262 1084.5982,-258 1008.4018,-258 1008.4018,-222 1111.5982,-222 1111.5982,-258"/>
+<text text-anchor="middle" x="1060" y="-235.8" font-family="Times,serif" font-size="14.00" fill="#000000">PopularModule</text>
+</g>
+<!-- CommonModule&#45;&gt;PopularModule -->
+<g id="edge9" class="edge">
+<title>CommonModule&#45;&gt;PopularModule</title>
+<path fill="none" stroke="#000000" d="M827.7659,-104C899.1606,-104 1013.7501,-104 1013.7501,-104 1013.7501,-104 1013.7501,-211.9403 1013.7501,-211.9403"/>
+<polygon fill="#000000" stroke="#000000" points="1010.2502,-211.9402 1013.7501,-221.9403 1017.2502,-211.9403 1010.2502,-211.9402"/>
+</g>
+<!-- SharedModule&#45;&gt;HomeModule -->
+<g id="edge7" class="edge">
+<title>SharedModule&#45;&gt;HomeModule</title>
+<path fill="none" stroke="#000000" d="M743.8349,-190.2228C743.8349,-190.2228 743.8349,-211.7269 743.8349,-211.7269"/>
+<polygon fill="#000000" stroke="#000000" points="740.3349,-211.7269 743.8349,-221.7269 747.3349,-211.727 740.3349,-211.7269"/>
+</g>
+<!-- SharedModule&#45;&gt;PopularModule -->
+<g id="edge10" class="edge">
+<title>SharedModule&#45;&gt;PopularModule</title>
+<path fill="none" stroke="#000000" d="M828.2225,-172C896.3535,-172 1011.1005,-172 1011.1005,-172 1011.1005,-172 1011.1005,-211.7772 1011.1005,-211.7772"/>
+<polygon fill="#000000" stroke="#000000" points="1007.6006,-211.7772 1011.1005,-221.7772 1014.6006,-211.7773 1007.6006,-211.7772"/>
+</g>
+<!-- TestComponent  -->
+<g id="node13" class="node">
+<title>TestComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="976.4348,-258 867.5652,-258 867.5652,-222 976.4348,-222 976.4348,-258"/>
+<text text-anchor="middle" x="922" y="-235.8" font-family="Times,serif" font-size="14.00" fill="#000000">TestComponent </text>
+</g>
+<!-- SharedModule&#45;&gt;TestComponent  -->
+<g id="edge13" class="edge">
+<title>SharedModule&#45;&gt;TestComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M793.0459,-190.2228C793.0459,-210.3652 793.0459,-240 793.0459,-240 793.0459,-240 857.3119,-240 857.3119,-240"/>
+<polygon fill="#000000" stroke="#000000" points="857.3119,-243.5001 867.3119,-240 857.3118,-236.5001 857.3119,-243.5001"/>
+</g>
+<!-- HomeRouterModule -->
+<g id="node9" class="node">
+<title>HomeRouterModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="697.8641,-122 694.8641,-126 673.8641,-126 670.8641,-122 566.1359,-122 566.1359,-86 697.8641,-86 697.8641,-122"/>
+<text text-anchor="middle" x="632" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">HomeRouterModule</text>
+</g>
+<!-- HomeRouterModule&#45;&gt;HomeModule -->
+<g id="edge8" class="edge">
+<title>HomeRouterModule&#45;&gt;HomeModule</title>
+<path fill="none" stroke="#000000" d="M681.0256,-122.0597C681.0256,-122.0597 681.0256,-211.8656 681.0256,-211.8656"/>
+<polygon fill="#000000" stroke="#000000" points="677.5257,-211.8655 681.0256,-221.8656 684.5257,-211.8656 677.5257,-211.8655"/>
+</g>
+<!-- PopularRouterModule -->
+<g id="node11" class="node">
+<title>PopularRouterModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="1157.7007,-190 1154.7007,-194 1133.7007,-194 1130.7007,-190 1016.2993,-190 1016.2993,-154 1157.7007,-154 1157.7007,-190"/>
+<text text-anchor="middle" x="1087" y="-167.8" font-family="Times,serif" font-size="14.00" fill="#000000">PopularRouterModule</text>
+</g>
+<!-- PopularRouterModule&#45;&gt;PopularModule -->
+<g id="edge11" class="edge">
+<title>PopularRouterModule&#45;&gt;PopularModule</title>
+<path fill="none" stroke="#000000" d="M1063.9744,-190.2228C1063.9744,-190.2228 1063.9744,-211.7269 1063.9744,-211.7269"/>
+<polygon fill="#000000" stroke="#000000" points="1060.4745,-211.7269 1063.9744,-221.7269 1067.4745,-211.727 1060.4745,-211.7269"/>
+</g>
+</g>
+</svg>
+
+    </div>
     <div class="btn-group">
         <button id="zoom-in" class="btn btn-default btn-sm">Zoom in</button>
         <button id="reset" class="btn btn-default btn-sm">Reset</button>
@@ -218,7 +566,7 @@
                     <div class="card-block">
                         <h4 class="card-title"><span class="fa fa-archive"></span></h4>
                         <p class="card-text">
-                            <a href="./modules.html">1 module</a>
+                            <a href="./modules.html">4 modules</a>
                         </p>
                     </div>
                 </div>
@@ -227,7 +575,23 @@
                 <div class="card text-center">
                     <div class="card-block">
                         <h4 class="card-title"><span class="fa fa-cogs"></span></h4>
-                        <p class="card-text">1 component</p>
+                        <p class="card-text">5 components</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title"><span class="fa fa-file-code-o"></span></h4>
+                        <p class="card-text">1 class</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title"><span class="fa fa-info"></span></h4>
+                        <p class="card-text">4 interfaces</p>
                     </div>
                 </div>
             </div>
@@ -268,20 +632,17 @@
 
        <script src="./js/compodoc.js"></script>
 
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 0;</script>
+
        <script src="./js/search/search.js"></script>
        <script src="./js/search/lunr.min.js"></script>
        <script src="./js/search/search-lunr.js"></script>
 
+       <script src="./js/tabs.js"></script>
        <script src="./js/menu.js"></script>
-       <script src="./js/libs/highlight.pack.js"></script>
-       <script src="./js/libs/highlightjs-line-numbers.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
        <script src="./js/search/search_index.js"></script>
-       <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                hljs.initHighlightingOnLoad();
-                hljs.initLineNumbersOnLoad();
-            });
-       </script>
 
     </body>
 </html>
