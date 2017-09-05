@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IAlbum } from '../../shared/interfaces/album.interface';
+import { IAlbum } from '../../models/album.interface';
 
 @Component({
   selector: 'app-test',

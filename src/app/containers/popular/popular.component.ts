@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AlbumModel } from '../../shared/models/album.model';
+import { AlbumModel } from '../../models/album.model';
 
 @Component({
   selector: 'app-popular',

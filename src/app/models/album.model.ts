@@ -1,5 +1,5 @@
-import { IArtist } from '../interfaces/artist.interface';
-import { IAlbumImage } from '../interfaces/album-image.interface';
+import { IArtist } from './artist.interface';
+import { IAlbumImage } from './album-image.interface';
 
 export class AlbumModel {
   id: number;
