@@ -121,11 +121,36 @@
                                 id="xs-classes-links"
                             >
                                 <li class="link">
-                                    <a href="../classes/Album.html" >Album</a>
+                                    <a href="../classes/AlbumModel.html" >AlbumModel</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/GetNewestAlbum.html" >GetNewestAlbum</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/GetNewestAlbumComplete.html" >GetNewestAlbumComplete</a>
                                 </li>
                         </ul>
                     </li>
             
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/AlbumEffect.html" >AlbumEffect</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/AlbumStores.html" >AlbumStores</a>
+                                </li>
+                        </ul>
+                    </li>
             
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse"
@@ -139,6 +164,9 @@
                                 id="xs-interfaces-links"
                             >
                                 <li class="link">
+                                    <a href="../interfaces/AppState.html" >AppState</a>
+                                </li>
+                                <li class="link">
                                     <a href="../interfaces/IAlbum.html" >IAlbum</a>
                                 </li>
                                 <li class="link">
@@ -149,6 +177,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/ITrack.html" >ITrack</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/State.html" >State</a>
                                 </li>
                         </ul>
                     </li>
@@ -278,11 +309,36 @@
                                        id="classes-links"
                    >
                                        <li class="link">
-                                           <a href="../classes/Album.html" >Album</a>
+                                           <a href="../classes/AlbumModel.html" >AlbumModel</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/GetNewestAlbum.html" >GetNewestAlbum</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/GetNewestAlbumComplete.html" >GetNewestAlbumComplete</a>
                                        </li>
                                </ul>
                            </li>
                    
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/AlbumEffect.html" >AlbumEffect</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/AlbumStores.html" >AlbumStores</a>
+                                       </li>
+                               </ul>
+                           </li>
                    
                            <li class="chapter">
                                <div class="simple menu-toggler" data-toggle="collapse"
@@ -296,6 +352,9 @@
                                        id="interfaces-links"
                    >
                                        <li class="link">
+                                           <a href="../interfaces/AppState.html" >AppState</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../interfaces/IAlbum.html" >IAlbum</a>
                                        </li>
                                        <li class="link">
@@ -306,6 +365,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/ITrack.html" >ITrack</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/State.html" >State</a>
                                        </li>
                                </ul>
                            </li>
@@ -386,7 +448,7 @@
 
             <tr>
                 <td class="col-md-3">template</td>
-                <td class="col-md-9"><pre class="line-numbers"><code class="language-html">&lt;h2&gt;404 Error: Page not found&lt;/h2&gt;</code></pre></td>
+                <td class="col-md-9"><pre class="line-numbers"><code class="language-html">&lt;h2&gt;Well, this is embarrasing.&lt;/h2&gt;              &lt;p&gt;404 Error: Page not found&lt;/p&gt;</code></pre></td>
             </tr>
 
 
@@ -406,7 +468,8 @@
         <pre class="line-numbers"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
 
 @Component({
-  template: &#x27;&lt;h2&gt;404 Error: Page not found&lt;/h2&gt;&#x27;
+  template: &#x60;&lt;h2&gt;Well, this is embarrasing.&lt;/h2&gt;
+              &lt;p&gt;404 Error: Page not found&lt;/p&gt;&#x60;
 })
 
 export class PageNotFoundComponent {
@@ -438,7 +501,7 @@ export class PageNotFoundComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><h2>404 Error: Page not found</h2></div>'
+        var COMPONENT_TEMPLATE = '<div><h2>Well, this is embarrasing.</h2>              <p>404 Error: Page not found</p></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'PageNotFoundComponent', 'selector': ''},{'name': 'PopularComponent', 'selector': 'app-popular'},{'name': 'TestComponent', 'selector': 'app-test'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'PageNotFoundComponent'};

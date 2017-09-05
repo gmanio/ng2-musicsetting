@@ -22,61 +22,77 @@
 <text text-anchor="start" x="429.7258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
 <g id="clust1" class="cluster">
 <title>cluster_SharedModule</title>
-<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="111,-70 111,-268 385,-268 385,-70 111,-70"/>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="37,-70 37,-268 459,-268 459,-70 37,-70"/>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_SharedModule_declarations</title>
-<polygon fill="none" stroke="#000000" points="255,-78 255,-130 377,-130 377,-78 255,-78"/>
+<polygon fill="none" stroke="#000000" points="329,-78 329,-130 451,-130 451,-78 329,-78"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_SharedModule_imports</title>
-<polygon fill="none" stroke="#000000" points="119,-78 119,-130 247,-130 247,-78 119,-78"/>
+<polygon fill="none" stroke="#000000" points="193,-78 193,-130 321,-130 321,-78 193,-78"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_SharedModule_exports</title>
-<polygon fill="none" stroke="#000000" points="187,-208 187,-260 311,-260 311,-208 187,-208"/>
+<polygon fill="none" stroke="#000000" points="195,-208 195,-260 319,-260 319,-208 195,-208"/>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_SharedModule_providers</title>
+<polygon fill="none" stroke="#000000" points="45,-78 45,-130 185,-130 185,-78 45,-78"/>
 </g>
 <!-- TestComponent -->
 <g id="node1" class="node">
 <title>TestComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="368.9357,-122 263.0643,-122 263.0643,-86 368.9357,-86 368.9357,-122"/>
-<text text-anchor="middle" x="316" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">TestComponent</text>
+<polygon fill="#ffffb3" stroke="#000000" points="442.9357,-122 337.0643,-122 337.0643,-86 442.9357,-86 442.9357,-122"/>
+<text text-anchor="middle" x="390" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">TestComponent</text>
 </g>
 <!-- SharedModule -->
 <g id="node2" class="node">
 <title>SharedModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="298.4231,-187 295.4231,-191 274.4231,-191 271.4231,-187 199.5769,-187 199.5769,-151 298.4231,-151 298.4231,-187"/>
-<text text-anchor="middle" x="249" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">SharedModule</text>
+<polygon fill="#8dd3c7" stroke="#000000" points="306.4231,-187 303.4231,-191 282.4231,-191 279.4231,-187 207.5769,-187 207.5769,-151 306.4231,-151 306.4231,-187"/>
+<text text-anchor="middle" x="257" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">SharedModule</text>
 </g>
 <!-- TestComponent&#45;&gt;SharedModule -->
 <g id="edge1" class="edge">
 <title>TestComponent&#45;&gt;SharedModule</title>
-<path fill="none" stroke="#000000" d="M280.7469,-122.1061C280.7469,-122.1061 280.7469,-140.991 280.7469,-140.991"/>
-<polygon fill="#000000" stroke="#000000" points="277.2469,-140.9909 280.7469,-150.991 284.2469,-140.991 277.2469,-140.9909"/>
+<path fill="none" stroke="#000000" d="M390,-122.1061C390,-141.3391 390,-169 390,-169 390,-169 316.5243,-169 316.5243,-169"/>
+<polygon fill="#000000" stroke="#000000" points="316.5243,-165.5001 306.5243,-169 316.5243,-172.5001 316.5243,-165.5001"/>
 </g>
 <!-- TestComponent  -->
 <g id="node4" class="node">
 <title>TestComponent </title>
-<polygon fill="#fb8072" stroke="#000000" points="303.4348,-252 194.5652,-252 194.5652,-216 303.4348,-216 303.4348,-252"/>
-<text text-anchor="middle" x="249" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">TestComponent </text>
+<polygon fill="#fb8072" stroke="#000000" points="311.4348,-252 202.5652,-252 202.5652,-216 311.4348,-216 311.4348,-252"/>
+<text text-anchor="middle" x="257" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">TestComponent </text>
 </g>
 <!-- SharedModule&#45;&gt;TestComponent  -->
 <g id="edge3" class="edge">
 <title>SharedModule&#45;&gt;TestComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M249,-187.1061C249,-187.1061 249,-205.991 249,-205.991"/>
-<polygon fill="#000000" stroke="#000000" points="245.5001,-205.9909 249,-215.991 252.5001,-205.991 245.5001,-205.9909"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M257,-187.1061C257,-187.1061 257,-205.991 257,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="253.5001,-205.9909 257,-215.991 260.5001,-205.991 253.5001,-205.9909"/>
 </g>
 <!-- CommonModule -->
 <g id="node3" class="node">
 <title>CommonModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="238.6681,-122 235.6681,-126 214.6681,-126 211.6681,-122 127.3319,-122 127.3319,-86 238.6681,-86 238.6681,-122"/>
-<text text-anchor="middle" x="183" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CommonModule</text>
+<polygon fill="#8dd3c7" stroke="#000000" points="312.6681,-122 309.6681,-126 288.6681,-126 285.6681,-122 201.3319,-122 201.3319,-86 312.6681,-86 312.6681,-122"/>
+<text text-anchor="middle" x="257" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CommonModule</text>
 </g>
 <!-- CommonModule&#45;&gt;SharedModule -->
 <g id="edge2" class="edge">
 <title>CommonModule&#45;&gt;SharedModule</title>
-<path fill="none" stroke="#000000" d="M219.3114,-122.1061C219.3114,-122.1061 219.3114,-140.991 219.3114,-140.991"/>
-<polygon fill="#000000" stroke="#000000" points="215.8114,-140.9909 219.3114,-150.991 222.8114,-140.991 215.8114,-140.9909"/>
+<path fill="none" stroke="#000000" d="M257,-122.1061C257,-122.1061 257,-140.991 257,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="253.5001,-140.9909 257,-150.991 260.5001,-140.991 253.5001,-140.9909"/>
+</g>
+<!-- AlbumStores -->
+<g id="node5" class="node">
+<title>AlbumStores</title>
+<ellipse fill="#fdb462" stroke="#000000" cx="115" cy="-104" rx="61.9963" ry="18"/>
+<text text-anchor="middle" x="115" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">AlbumStores</text>
+</g>
+<!-- AlbumStores&#45;&gt;SharedModule -->
+<g id="edge4" class="edge">
+<title>AlbumStores&#45;&gt;SharedModule</title>
+<path fill="none" stroke="#000000" d="M115,-122.1061C115,-141.3391 115,-169 115,-169 115,-169 197.7338,-169 197.7338,-169"/>
+<polygon fill="#000000" stroke="#000000" points="197.7338,-172.5001 207.7338,-169 197.7338,-165.5001 197.7338,-172.5001"/>
 </g>
 </g>
 </svg>
