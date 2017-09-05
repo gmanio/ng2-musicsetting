@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TestComponent } from '../components/test/test.component';
+import { AlbumStores } from './stores/album.store';
 
 @NgModule({
   imports: [
@@ -12,7 +13,9 @@ import { TestComponent } from '../components/test/test.component';
   exports: [
     TestComponent
   ],
-  providers: []
+  providers: [
+    AlbumStores
+  ]
 })
 export class SharedModule {
 }

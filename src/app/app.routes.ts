@@ -12,7 +12,7 @@ export const RootRouterModule = RouterModule.forRoot(
     // { path: 'theme-list', loadChildren: './container/theme-list/slack.module#SlackModule' },
     // { path: 'play-list', loadChildren: './container/play-list/slack.module#SlackModule' },
     // { path: 'purchase', loadChildren: './container/purchase/purchase.module#SlackModule' },
-    { path: '**', component: PageNotFoundComponent }
+    // { path: '**', component: PageNotFoundComponent }
   ],
 
   /**

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Album } from '../../shared/models/album.model';
+import { AlbumModel } from '../../shared/models/album.model';
 
 @Component({
   selector: 'app-popular',
@@ -7,13 +7,13 @@ import { Album } from '../../shared/models/album.model';
   styleUrls: ['./popular.component.css']
 })
 export class PopularComponent implements OnInit {
-  album: Album;
+  album: AlbumModel;
 
   constructor() {
   }
 
   ngOnInit() {
-    this.album = new Album();
+    this.album = new AlbumModel({});
     console.log(this.album);
     setTimeout(() => {
       this.album.id = 1;
