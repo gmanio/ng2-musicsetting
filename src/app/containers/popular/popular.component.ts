@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { AlbumModel } from '../../models/album.model';
 
 @Component({
   selector: 'app-popular',
   templateUrl: './popular.component.html',
-  styleUrls: ['./popular.component.css']
+  styleUrls: ['./popular.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PopularComponent implements OnInit {
   album: AlbumModel;
