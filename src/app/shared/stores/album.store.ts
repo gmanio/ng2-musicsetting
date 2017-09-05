@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../reducers/index';
-import { IAlbum } from '../../shared/interfaces/album.interface';
+import { IAlbum } from '../../models/album.interface';
 import * as albumAction from '../../actions/album.action';
 
 

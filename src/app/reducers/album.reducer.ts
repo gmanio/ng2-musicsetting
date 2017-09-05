@@ -1,5 +1,5 @@
 import * as albumAction from '../actions/album.action';
-import { IAlbum } from '../shared/interfaces/album.interface';
+import { IAlbum } from '../models/album.interface';
 
 export interface State {
   newestList: IAlbum[];

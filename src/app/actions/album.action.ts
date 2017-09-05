@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { IAlbum } from '../shared/interfaces/album.interface';
+import { IAlbum } from '../models/album.interface';
 
 export const ActionTypes = {
   GET_NEWEST_ALBUM: 'get newest album',

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { IAlbum } from '../../shared/interfaces/album.interface';
+import { IAlbum } from '../../models/album.interface';
 import { AlbumStores } from '../../shared/stores/album.store';
-import { AlbumModel } from '../../shared/models/album.model';
+import { AlbumModel } from '../../models/album.model';
+import { LoggerService } from '../../shared/services/commons/logger.service';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,8 @@ import { AlbumModel } from '../../shared/models/album.model';
 export class HomeComponent implements OnInit {
   public newestList$: Observable<IAlbum[]>;
 
-  constructor(private albumStore: AlbumStores) {
+  constructor(private albumStore: AlbumStores,
+              private logger: LoggerService) {
     this.newestList$ = this.albumStore.selectNewestAlbumList();
   }
 
