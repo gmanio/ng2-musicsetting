@@ -18,13 +18,13 @@ import { NativeBridgeService } from './services/interfaces/native-bridge.service
     TestComponent
   ],
   providers: [
-    LoggerService,
     ApiService,
+    LoggerService,
     BroadcastEventService,
     NativeBridgeService,
-    ApiService,
     AlbumStores
   ]
 })
+
 export class SharedModule {
 }

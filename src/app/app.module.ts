@@ -3,17 +3,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-// IndexComponent
+// entryComponent
 import { AppComponent } from './app.component';
 
-// root router :: lazy module loading
+// root router
 import { RootRouterModule } from './app.routes';
 
 // redux
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { reducers } from './reducers';
-import { AlbumEffect } from './effects/album.effect';
 
 @NgModule({
   declarations: [
@@ -23,11 +22,9 @@ import { AlbumEffect } from './effects/album.effect';
     RouterModule,
     BrowserModule,
     HttpClientModule,
-    RootRouterModule,       // router configure
+    RootRouterModule,
     StoreModule.forRoot(reducers),
-    EffectsModule.forRoot([
-      AlbumEffect
-    ])
+    EffectsModule.forRoot([])
   ],
   bootstrap: [AppComponent]
 })
