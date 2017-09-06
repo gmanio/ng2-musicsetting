@@ -1,11 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpEvent, HttpInterceptor, HttpRequest } from '@angular/common/http';
-import { HttpHandler } from "@angular/common/http";
+import { HttpEvent, HttpInterceptor, HttpRequest, HttpHandler } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class ApiHandlerService implements HttpInterceptor {
-
   constructor() {
   }
 

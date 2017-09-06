@@ -13,12 +13,12 @@ const initialState: State = {
 
 export function reducer(state = initialState, action: albumAction.Actions): State {
   switch ( action.type ) {
-    case albumAction.GET_NEWEST_ALBUM: {
+    case albumAction.ActionTypes.GET_NEWEST_ALBUM: {
       return Object.assign({}, state, {
         loading: true
       });
     }
-    case albumAction.GET_NEWEST_ALBUM_COMPLETE: {
+    case albumAction.ActionTypes.GET_NEWEST_ALBUM_COMPLETE: {
       const list = action.payload;
       return Object.assign({}, state, {
         newestList: list,
