@@ -1,5 +1,4 @@
 import { RouterModule } from '@angular/router';
-import { PageNotFoundComponent } from './components/error/page-not-found.component';
 
 export const RootRouterModule = RouterModule.forRoot(
   [

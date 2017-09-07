@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { AlbumModel } from '../../models/album.model';
+import { ApiService } from '../../shared/services/interfaces/api.service';
+
 
 @Component({
   selector: 'app-popular',
@@ -8,17 +9,11 @@ import { AlbumModel } from '../../models/album.model';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PopularComponent implements OnInit {
-  album: AlbumModel;
-
-  constructor() {
+  constructor(private apiService: ApiService) {
   }
 
   ngOnInit() {
-    this.album = new AlbumModel({});
-    console.log(this.album);
-    setTimeout(() => {
-      this.album.id = 1;
-    }, 3000);
+
   }
 
 }

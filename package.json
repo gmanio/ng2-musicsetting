@@ -1,11 +1,12 @@
 {
-  "name": "musicmall",
+  "name": "Musicmall-web",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "start": "ng serve --host 0.0.0.0 -p 5000 --disable-host-check=true",
-    "build": "ng build --prod --aot --build-optimizer --output-hashing none",
+    "build": "ng build --prod --aot --build-optimizer --output-hashing none -cc false --stats-json",
     "build:sourcemap": "ng build --prod --aot --build-optimizer --output-hashing none -sourcemap",
+    "analyser": "webpack-bundle-analyzer ./dist/stats.json -r dist/report.html -m static -s gzip",
     "docs": "compodoc -p src/tsconfig.app.json --silent --disableCoverage -o -s",
     "test": "ng test --watch=false --code-coverage",
     "lint": "ng lint",
@@ -27,6 +28,7 @@
     "compodoc": "^0.0.41",
     "core-js": "^2.5.1",
     "rxjs": "^5.4.2",
+    "webpack-bundle-analyzer": "^2.9.0",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {

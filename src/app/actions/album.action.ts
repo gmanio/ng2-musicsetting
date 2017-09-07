@@ -7,19 +7,18 @@ export const ActionTypes = {
 };
 
 export class GetNewestAlbum implements Action {
-  type = ActionTypes.GET_NEWEST_ALBUM;
+  readonly type = ActionTypes.GET_NEWEST_ALBUM;
 
   constructor(public payload: IAlbum[]) {
   }
 }
 
 export class GetNewestAlbumComplete implements Action {
-  type = ActionTypes.GET_NEWEST_ALBUM_COMPLETE;
+  readonly type = ActionTypes.GET_NEWEST_ALBUM_COMPLETE;
 
   constructor(public payload: IAlbum[]) {
   }
 }
-
 
 export type Actions =
   GetNewestAlbum |
