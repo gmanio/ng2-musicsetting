@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { IAlbum } from '../../models/album.interface';
-import { AlbumStores } from '../../shared/stores/album.store';
+import { AlbumStore } from '../../redux/stores/album.store';
 import { AlbumModel } from '../../models/album.model';
 import { LoggerService } from '../../shared/services/commons/logger.service';
 
@@ -16,7 +16,7 @@ import { LoggerService } from '../../shared/services/commons/logger.service';
 export class HomeComponent implements OnInit {
   public newestList$: Observable<IAlbum[]>;
 
-  constructor(private albumStore: AlbumStores,
+  constructor(private albumStore: AlbumStore,
               private logger: LoggerService) {
     this.newestList$ = this.albumStore.selectNewestAlbumList();
   }

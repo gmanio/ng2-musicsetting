@@ -7,7 +7,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { HomeComponent } from './home.component';
 import { PageNotFoundComponent } from '../../components/error/page-not-found.component';
 import { EffectsModule } from '@ngrx/effects';
-import { AlbumEffect } from '../../effects/album.effect';
+import { AlbumEffect } from '../../redux/effects/album.effect';
 
 @NgModule({
   imports: [

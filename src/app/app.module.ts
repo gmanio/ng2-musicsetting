@@ -12,7 +12,7 @@ import { RootRouterModule } from './app.routes';
 // redux
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { reducers } from './reducers';
+import { reducers } from './redux/reducers';
 
 @NgModule({
   declarations: [

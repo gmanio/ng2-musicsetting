@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Actions, Effect } from '@ngrx/effects';
-import { IAlbum } from '../models/album.interface';
+import { IAlbum } from '../../models/album.interface';
 import * as albumActions from '../actions/album.action';
 
 import 'rxjs/add/operator/map';
