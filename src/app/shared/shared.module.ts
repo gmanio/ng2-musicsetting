@@ -7,6 +7,8 @@ import { BroadcastEventService } from './services/interfaces/broadcast-event.ser
 import { NativeBridgeService } from './services/interfaces/native-bridge.service';
 import { ToastComponent } from '../components/toast/toast.component';
 import { ReduxModule } from '../redux/redux.module';
+import { SwiperVscrollDirective } from './directives/swiper-vscroll.directive';
+import { ResizeDirective } from './directives/resize.directive';
 
 @NgModule({
   imports: [
@@ -15,11 +17,15 @@ import { ReduxModule } from '../redux/redux.module';
   ],
   declarations: [
     TestComponent,
-    ToastComponent
+    ToastComponent,
+    SwiperVscrollDirective,
+    ResizeDirective
   ],
   exports: [
     TestComponent,
-    ToastComponent
+    ToastComponent,
+    SwiperVscrollDirective,
+    ResizeDirective
   ],
   providers: [
     ApiService,

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { IAlbum } from '../../models/album.interface';
 import { AlbumStore } from '../../redux/stores/album.store';
@@ -6,11 +6,10 @@ import { AlbumModel } from '../../models/album.model';
 import { LoggerService } from '../../shared/services/commons/logger.service';
 
 @Component({
-  selector: 'app-home',
+  selector: 'tx-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
-
 })
 
 export class HomeComponent implements OnInit {

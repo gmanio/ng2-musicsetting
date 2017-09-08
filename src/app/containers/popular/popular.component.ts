@@ -3,7 +3,7 @@ import { ApiService } from '../../shared/services/interfaces/api.service';
 
 
 @Component({
-  selector: 'app-popular',
+  selector: 'tx-popular',
   templateUrl: './popular.component.html',
   styleUrls: ['./popular.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush

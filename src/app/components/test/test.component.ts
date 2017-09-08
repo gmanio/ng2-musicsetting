@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
 import { IAlbum } from '../../models/album.interface';
 
 @Component({
-  selector: 'app-test',
+  selector: 'tx-test',
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
