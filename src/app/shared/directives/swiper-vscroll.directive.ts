@@ -1,5 +1,8 @@
 import { AfterViewInit, Directive, ElementRef, EventEmitter, Output } from '@angular/core';
-import * as Swiper from 'Swiper';
+// import * as Swiper from 'Swiper';
+import 'Swiper';
+
+declare var Swiper;
 
 @Directive({
   selector: '[txSwiperVscroll]'
