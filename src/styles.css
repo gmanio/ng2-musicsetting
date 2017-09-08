@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "~swiper/dist/css/swiper.min.css";
 
 /* SK TechX - Base 1.0 */
 html,body,form,div,p,dl,dt,dd,ul,ol,li,fieldset,th,td,button,blockquote{margin:0;padding:0;border:0;font-size:100%;font:inherit;}
@@ -17,3 +18,7 @@ a{text-decoration:none;}
 article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block;}
 a, button{cursor:pointer;background:transparent;}
 hr{display:none;}
+
+/* Scroll Wrapper */
+.swiper-container {width:100%;height:100%;}
+.swiper-slide {height:auto;box-sizing:border-box;}

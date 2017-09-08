@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-toast',
+  selector: 'tx-toast',
   templateUrl: './toast.component.html',
   styleUrls: ['./toast.component.css']
 })
