@@ -1,5 +1,5 @@
 import * as albumAction from '../actions/album.action';
-import { IAlbum } from '../models/album.interface';
+import { IAlbum } from '../../models/album.interface';
 
 export interface State {
   newestList: IAlbum[];
@@ -11,7 +11,7 @@ const initialState: State = {
   loading: false
 };
 
-export function reducer(state = initialState, action: albumAction.Actions): State {
+export function reducer(state: State = initialState, action: albumAction.Actions): State {
   switch ( action.type ) {
     case albumAction.ActionTypes.GET_NEWEST_ALBUM: {
       return Object.assign({}, state, {
@@ -25,6 +25,8 @@ export function reducer(state = initialState, action: albumAction.Actions): Stat
         loading: false
       });
     }
+    default:
+      return state;
   }
 }
 

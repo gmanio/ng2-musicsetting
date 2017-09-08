@@ -82,13 +82,13 @@
 <path fill="none" stroke="#000000" d="M257,-122.1061C257,-122.1061 257,-140.991 257,-140.991"/>
 <polygon fill="#000000" stroke="#000000" points="253.5001,-140.9909 257,-150.991 260.5001,-140.991 253.5001,-140.9909"/>
 </g>
-<!-- AlbumStores -->
+<!-- AlbumStore -->
 <g id="node5" class="node">
 <title>AlbumStores</title>
 <ellipse fill="#fdb462" stroke="#000000" cx="115" cy="-104" rx="61.9963" ry="18"/>
 <text text-anchor="middle" x="115" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">AlbumStores</text>
 </g>
-<!-- AlbumStores&#45;&gt;SharedModule -->
+<!-- AlbumStore&#45;&gt;SharedModule -->
 <g id="edge4" class="edge">
 <title>AlbumStores&#45;&gt;SharedModule</title>
 <path fill="none" stroke="#000000" d="M115,-122.1061C115,-141.3391 115,-169 115,-169 115,-169 197.7338,-169 197.7338,-169"/>
