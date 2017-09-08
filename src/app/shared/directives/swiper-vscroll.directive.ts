@@ -1,8 +1,6 @@
 import { AfterViewInit, Directive, ElementRef, EventEmitter, Output } from '@angular/core';
-// import * as Swiper from 'Swiper';
-import 'Swiper';
 
-declare var Swiper;
+import { default as Swiper } from 'swiper/dist/js/swiper.min';
 
 @Directive({
   selector: '[txSwiperVscroll]'
@@ -19,11 +17,15 @@ export class SwiperVscrollDirective implements AfterViewInit {
 
   ngAfterViewInit() {
     this.swiper = new Swiper(this.el.nativeElement, {
-      scrollbar: '.swiper-scrollbar',
       direction: 'vertical',
       slidesPerView: 'auto',
       freeMode: true,
-      // autoResize: true,
+      scrollbar: {
+        el: this.el.nativeElement.querySelector('.swiper-scrollbar'),
+        hide: false,
+        draggable: true,
+        snapOnRelease: true
+      },
       mousewheelControl: true,
       onTouchMove: this.touchMove.bind(this),
       onTouchStart: this.touchStart.bind(this),
@@ -34,10 +36,7 @@ export class SwiperVscrollDirective implements AfterViewInit {
   }
 
   public update() {
-    this.swiper.updateAutoHeight();
     this.swiper.update();
-    this.swiper.scrollbar.set();
-    this.swiper.scrollbar.setTranslate();
   }
 
   public goTo(duration, value) {
