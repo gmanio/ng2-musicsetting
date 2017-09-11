@@ -10,21 +10,18 @@ import { AppComponent } from './app.component';
 import { RootRouterModule } from './app.routes';
 
 // redux
-import { StoreModule } from '@ngrx/store';
-import { EffectsModule } from '@ngrx/effects';
-import { reducers } from './redux/reducers';
+import { ReduxModule } from './redux/redux.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    ReduxModule,
     RouterModule,
     BrowserModule,
     HttpClientModule,
-    RootRouterModule,
-    StoreModule.forRoot(reducers),
-    EffectsModule.forRoot([])
+    RootRouterModule
   ],
   bootstrap: [AppComponent]
 })
