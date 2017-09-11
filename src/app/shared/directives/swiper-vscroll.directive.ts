@@ -5,6 +5,7 @@ import { default as Swiper } from 'swiper/dist/js/swiper.min';
 @Directive({
   selector: '[txSwiperVscroll]'
 })
+
 export class SwiperVscrollDirective implements AfterViewInit {
   private swiper;
   @Output() scrollDown = new EventEmitter();
@@ -16,15 +17,17 @@ export class SwiperVscrollDirective implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.swiper = new Swiper(this.el.nativeElement, {
+    const elHost = this.el.nativeElement;
+    const elScrollBar = elHost.querySelector('.swiper-scrollbar');
+    this.swiper = new Swiper(elHost, {
       direction: 'vertical',
       slidesPerView: 'auto',
       freeMode: true,
       scrollbar: {
-        el: this.el.nativeElement.querySelector('.swiper-scrollbar'),
+        el: elScrollBar,
         hide: false,
-        draggable: true,
-        snapOnRelease: true
+        draggable: false,
+        snapOnRelease: false
       },
       mousewheelControl: true,
       onTouchMove: this.touchMove.bind(this),
