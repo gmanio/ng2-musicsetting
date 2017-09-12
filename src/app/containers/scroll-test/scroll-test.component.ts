@@ -44,6 +44,10 @@ export class ScrollTestComponent implements OnInit {
     });
   }
 
+  public onChangeDirection(direction) {
+    this.logger.log('onChangeDirection', direction);
+  }
+
   private addContent() {
     const test1: IAlbum = new AlbumModel({
       id: 1,

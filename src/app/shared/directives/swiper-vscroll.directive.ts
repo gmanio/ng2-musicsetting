@@ -7,11 +7,10 @@ import { default as Swiper } from 'swiper/dist/js/swiper.min';
 })
 
 export class SwiperVscrollDirective implements AfterViewInit {
-  private swiper;
-  private direction = 0;
+  private swiper: any;
+  private direction: number = 0;
 
-  @Output() scrollDown = new EventEmitter();
-  @Output() scrollUp = new EventEmitter();
+  @Output() changeDirection = new EventEmitter();
   @Output() pullToRefresh = new EventEmitter();
   @Output() infiniteDown = new EventEmitter();
 
@@ -56,12 +55,15 @@ export class SwiperVscrollDirective implements AfterViewInit {
   }
 
   private touchMove(event) {
-    // console.log('touchMove', this.swiper, event, event.movementY);
-    // if ( swiper.maxTranslate() === 0 ) {
-    //   this.direction = swiper.getTranslate(swiper.wrapper[0], 'y') > 0 ? 1 : swiper.getTranslate(swiper.wrapper[0], 'y') < 0 ? -1 : 0;
-    //   console.log(this.direction);
-    // }
-    // console.log('touchMove', swiper, e);
+    if ( event.movementY !== 0 ) {
+      const currentDirection = event.movementY < 0 ? -1 : 1;
+      if ( this.direction === 0 ) {
+        this.changeDirection.emit(currentDirection);
+      } else if ( this.direction !== currentDirection ) {
+        this.changeDirection.emit(currentDirection);
+      }
+      this.direction = currentDirection;
+    }
   }
 
   private touchStart(event) {
