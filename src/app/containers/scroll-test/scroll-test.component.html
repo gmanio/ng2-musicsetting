@@ -1,7 +1,10 @@
 <h1>scroll-test works!</h1>
-<div class="swiper-container" txSwiperVscroll>
+<div class="swiper-container" txSwiperVscroll (pullToRefresh)="onPullToRefresh()">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
+      <div [ngClass]="onRefresh ? 'loading_wrapper loading_wrapper_on': 'loading_wrapper'">
+        <div class="loading"></div>
+      </div>
       <div txResize (resize)="onResize()">
         <tx-test [newestList]="newestList$ | async"></tx-test>
         <h4>Scroll Container</h4>
