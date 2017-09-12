@@ -1,6 +1,7 @@
 import { AfterViewInit, Directive, ElementRef, EventEmitter, Output } from '@angular/core';
-
+import { SCROLL_DIRECTION } from '../types/event-key.type';
 import { default as Swiper } from 'swiper/dist/js/swiper.min';
+import FormatHelper from '../helpers/format.helper';
 
 @Directive({
   selector: '[txSwiperVscroll]'
@@ -8,7 +9,9 @@ import { default as Swiper } from 'swiper/dist/js/swiper.min';
 
 export class SwiperVscrollDirective implements AfterViewInit {
   private swiper: any;
-  private direction: number = 0;
+  private direction: SCROLL_DIRECTION = SCROLL_DIRECTION.DEFAULT;
+  private prevTranslate: number;
+  private isTransition: boolean;
 
   @Output() changeDirection = new EventEmitter();
   @Output() pullToRefresh = new EventEmitter();
@@ -55,19 +58,26 @@ export class SwiperVscrollDirective implements AfterViewInit {
   }
 
   private touchMove(event) {
-    if ( event.movementY !== 0 ) {
-      const currentDirection = event.movementY < 0 ? -1 : 1;
+    if ( FormatHelper.isEmpty(this.prevTranslate) ) {
+      this.prevTranslate = this.swiper.translate;
+      return;
+    }
+    const movement = this.swiper.translate - this.prevTranslate;
+    if ( movement !== 0 && !this.isTransition ) {
+      const currentDirection: SCROLL_DIRECTION = movement < 0 ? SCROLL_DIRECTION.UP_TO_DOWN : SCROLL_DIRECTION.DOWN_TO_UP;
       if ( this.direction === 0 ) {
         this.changeDirection.emit(currentDirection);
       } else if ( this.direction !== currentDirection ) {
         this.changeDirection.emit(currentDirection);
       }
       this.direction = currentDirection;
+      this.prevTranslate = this.swiper.translate;
     }
   }
 
   private touchStart(event) {
-    // console.log('touchStart');
+    // console.log('touchStart', this.swiper.translate, this.prevTranslate);
+    // this.prevTranslate = this.swiper.translate;
 
   }
 
@@ -77,7 +87,8 @@ export class SwiperVscrollDirective implements AfterViewInit {
   }
 
   private transitionStart(event) {
-    // console.log('transitionStart', event, this.swiper.translate, this.swiper.progress);
+    this.isTransition = true;
+    // console.log('transitionStart', this.swiper.translate, this.swiper.progress);
     if ( this.swiper.translate > 0 && this.swiper.progress === 0 ) {
       this.pullToRefresh.emit(true);
     }
@@ -85,6 +96,7 @@ export class SwiperVscrollDirective implements AfterViewInit {
   }
 
   private transitionEnd(event) {
+    this.isTransition = false;
     // console.log('transitionEnd');
 
   }
