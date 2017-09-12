@@ -6,7 +6,8 @@ export const RootRouterModule = RouterModule.forRoot(
     // { path: 'login', loadChildren: './container/login/login.module#LoginModule' },
     { path: 'home', loadChildren: './containers/home/home.module#HomeModule' },
     { path: 'popular', loadChildren: './containers/popular/popular.module#PopularModule' },
-    { path: 'scroll', loadChildren: './containers/scroll-test/scroll-test.module#ScrollTestModule'}
+    { path: 'scroll', loadChildren: './containers/scroll-test/scroll-test.module#ScrollTestModule'},
+    { path: 'swiper', loadChildren: './containers/swiper-test/swiper-test.module#SwiperTestModule'}
     // { path: 'newest', loadChildren: './container/newest/newest.module#NewestModule' },
     // { path: 'theme', loadChildren: './container/theme/theme.module#ThemeModule' },
     // { path: 'theme-list', loadChildren: './container/theme-list/slack.module#SlackModule' },

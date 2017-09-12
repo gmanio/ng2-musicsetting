@@ -1,5 +1,5 @@
 <h1>scroll-test works!</h1>
-<div class="swiper-container" txSwiperVscroll (pullToRefresh)="onPullToRefresh()">
+<div class="swiper-container" txSwiperVscroll (pullToRefresh)="onPullToRefresh()" (changeDirection)="onChangeDirection($event)">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <div [ngClass]="onRefresh ? 'loading_wrapper loading_wrapper_on': 'loading_wrapper'">

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { LoggerService } from '../commons/logger.service';
 import { BroadcastEventService } from './broadcast-event.service';
-import { EVT_CMD } from '../../types/broadcast-key';
+import { BROADCAST } from '../../types/event-key.type';
 import BrowserHelper from '../../helpers/browser.helper';
 
 const getWindow = (): any => {
@@ -67,6 +67,6 @@ export class NativeBridgeService {
 
   onBack() {
     this.logger.info('[NTV_ON] back');
-    this.broadcastEvent.broadcast(EVT_CMD.BACK_KEY, 'back');
+    this.broadcastEvent.broadcast(BROADCAST.BACK_KEY, 'back');
   }
 }

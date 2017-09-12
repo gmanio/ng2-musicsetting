@@ -6,6 +6,7 @@ import { AlbumStore } from '../../redux/stores/album.store';
 import { LoggerService } from '../../shared/services/commons/logger.service';
 import { timer } from 'rxjs/observable/timer';
 import { AlbumModel } from '../../models/album.model';
+import { SCROLL_DIRECTION } from '../../shared/types/event-key.type';
 
 @Component({
   selector: 'tx-scroll-test',
@@ -42,6 +43,14 @@ export class ScrollTestComponent implements OnInit {
       this.onRefresh = false;
       this.changeDetect.detectChanges();
     });
+  }
+
+  public onChangeDirection(direction) {
+    if ( direction === SCROLL_DIRECTION.UP_TO_DOWN ) {
+      this.logger.log('onChangeDirection: UP_TO_DOWN', direction);
+    } else if ( direction === SCROLL_DIRECTION.DOWN_TO_UP ) {
+      this.logger.log('onChangeDirection: DOWN_TO_UP', direction);
+    }
   }
 
   private addContent() {

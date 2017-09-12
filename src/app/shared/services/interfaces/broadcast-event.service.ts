@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { EVT_CMD } from '../../types/broadcast-key';
+import { BROADCAST } from '../../types/event-key.type';
 import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/map';
 
 interface BroadcastEvent {
-  key: EVT_CMD;
+  key: BROADCAST;
   data: any;
 }
 
@@ -18,11 +18,11 @@ export class BroadcastEventService {
     this.eventBus$ = new Subject<BroadcastEvent>();
   }
 
-  broadcast(key: EVT_CMD, data: any) {
+  broadcast(key: BROADCAST, data: any) {
     this.eventBus$.next({ key, data });
   }
 
-  on<BroadcastEvent>(key: EVT_CMD): Observable<BroadcastEvent> {
+  on<BroadcastEvent>(key: BROADCAST): Observable<BroadcastEvent> {
     return this.eventBus$.asObservable()
       .filter(event => event.key === key)
       .map(event => event.data);
