@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
 import { SwiperVscrollDirective } from '../../shared/directives/swiper-vscroll.directive';
 import { Observable } from 'rxjs/Observable';
 import { IAlbum } from '../../models/album.interface';
@@ -16,9 +16,11 @@ import { AlbumModel } from '../../models/album.model';
 export class ScrollTestComponent implements OnInit {
   @ViewChild(SwiperVscrollDirective) swiper;
   public newestList$: Observable<IAlbum[]>;
+  public onRefresh: boolean = false;
 
   constructor(private albumStore: AlbumStore,
-              private logger: LoggerService) {
+              private logger: LoggerService,
+              private changeDetect: ChangeDetectorRef) {
     this.newestList$ = this.albumStore.selectNewestAlbumList();
   }
 
@@ -31,6 +33,15 @@ export class ScrollTestComponent implements OnInit {
 
   public onResize() {
     this.swiper.update();
+  }
+
+  public onPullToRefresh() {
+    this.logger.log('onPullToRefresh');
+    this.onRefresh = true;
+    timer(2000).subscribe(res => {
+      this.onRefresh = false;
+      this.changeDetect.detectChanges();
+    });
   }
 
   private addContent() {
