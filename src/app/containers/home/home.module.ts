@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { EffectsModule } from '@ngrx/effects';
+
+import { AlbumEffect } from '../../redux/effects/album.effect';
 
 import { HomeRouterModule } from './home.routes';
-import { SharedModule } from '../../shared/shared.module';
-
 import { HomeComponent } from './home.component';
-import { PageNotFoundComponent } from '../../components/error/page-not-found.component';
-import { EffectsModule } from '@ngrx/effects';
-import { AlbumEffect } from '../../redux/effects/album.effect';
+
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   imports: [
@@ -19,8 +19,7 @@ import { AlbumEffect } from '../../redux/effects/album.effect';
     ])
   ],
   declarations: [
-    HomeComponent,
-    PageNotFoundComponent
+    HomeComponent
   ]
 })
 export class HomeModule {

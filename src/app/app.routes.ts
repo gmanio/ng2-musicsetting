@@ -1,4 +1,5 @@
 import { RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './components/error/page-not-found.component';
 
 export const RootRouterModule = RouterModule.forRoot(
   [
@@ -7,13 +8,13 @@ export const RootRouterModule = RouterModule.forRoot(
     { path: 'home', loadChildren: './containers/home/home.module#HomeModule' },
     { path: 'popular', loadChildren: './containers/popular/popular.module#PopularModule' },
     { path: 'scroll', loadChildren: './containers/scroll-test/scroll-test.module#ScrollTestModule'},
-    { path: 'swiper', loadChildren: './containers/swiper-test/swiper-test.module#SwiperTestModule'}
+    { path: 'swiper', loadChildren: './containers/swiper-test/swiper-test.module#SwiperTestModule'},
     // { path: 'newest', loadChildren: './container/newest/newest.module#NewestModule' },
     // { path: 'theme', loadChildren: './container/theme/theme.module#ThemeModule' },
     // { path: 'theme-list', loadChildren: './container/theme-list/slack.module#SlackModule' },
     // { path: 'play-list', loadChildren: './container/play-list/slack.module#SlackModule' },
     // { path: 'purchase', loadChildren: './container/purchase/purchase.module#SlackModule' },
-    // { path: '**', component: PageNotFoundComponent }
+    { path: '**', component: PageNotFoundComponent }
   ],
 
   /**

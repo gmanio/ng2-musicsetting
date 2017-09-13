@@ -7,8 +7,27 @@
   <title>Musicmall</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <base href="/">
+  <script>
+    /**
+     * This will be used for server rendering data.
+     *
+     * @type {{user_id: number}}
+     * @private
+     */
+    var __INITIAL_STATE__ = {
+      user_id: 101023829,
+      home_music: [{
+        id: 1000000,
+        categoryType: 'k-pop',
+        title: 'SongTitle',
+        genreStyle: 'pop',
+        albumType: 'solo',
+        releaseYmd: '2017'
+      }]
+    }
+  </script>
 </head>
 <body>
-  <tx-root></tx-root>
+<tx-root></tx-root>
 </body>
 </html>
