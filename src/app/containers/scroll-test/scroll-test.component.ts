@@ -11,7 +11,7 @@ import { SCROLL_DIRECTION } from '../../shared/types/event-key.type';
 @Component({
   selector: 'tx-scroll-test',
   templateUrl: './scroll-test.component.html',
-  styleUrls: ['./scroll-test.component.css'],
+  styleUrls: ['./scroll-test.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ScrollTestComponent implements OnInit {

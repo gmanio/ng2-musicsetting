@@ -4,7 +4,7 @@ import { IAlbum } from '../../models/album.interface';
 @Component({
   selector: 'tx-test',
   templateUrl: './test.component.html',
-  styleUrls: ['./test.component.css'],
+  styleUrls: ['./test.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TestComponent implements OnInit {

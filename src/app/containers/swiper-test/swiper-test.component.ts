@@ -4,7 +4,7 @@ import { default as Swiper } from 'swiper/dist/js/swiper.min';
 @Component({
   selector: 'tx-swiper-test',
   templateUrl: './swiper-test.component.html',
-  styleUrls: ['./swiper-test.component.css']
+  styleUrls: ['./swiper-test.component.scss']
 })
 export class SwiperTestComponent implements OnInit {
   private swiper: any;
